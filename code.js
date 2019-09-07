@@ -595,6 +595,8 @@ bot.on('message', async message => {
       .setColor(0x1cff8e)
       .setDescription(`This project was developed by [Nishant Srivastava](https://www.github.com/nishi7409).\n__The goal of the project was to provide users with a free service of which they can customize and add on to rather than going to a paid service.__`)
     return message.channel.send(embed)
+    .listen(process.env.PORT || 5000)
+
   }
 
 
